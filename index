@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Martin - Official Website</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ff00ff;
+            margin: 20px;
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        h1 {
+            color: #ff00ff;
+            text-shadow: 2px 2px #00ffff;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Welcome to Alex Martin's World 🌟</h1>
+        
+        <!-- Replace the src with an actual image URL -->
+        <img class="profile-pic" src="https://placekitten.com/200/200" alt="Alex Martin">
+        
+        <h2 class="blink">⭐ Professional Meme Lord ⭐</h2>
+        
+        <div class="video-container">
+            <!-- Replace with an actual video URL -->
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <h3>About Me</h3>
+        <p>🎮 Professional Gamer</p>
+        <p>🎭 Master of Disguise</p>
+        <p>🌈 Rainbow Enthusiast</p>
+        <p>✨ Professional Glitter Thrower</p>
+
+        <marquee behavior="alternate" direction="right">
+            <h2>💫 Follow me for more amazing content! 💫</h2>
+        </marquee>
+    </div>
+
+    <script>
+        // Add some annoying popup messages
+        setInterval(() => {
+            alert("Don't forget to smash that like button!");
+        }, 30000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Martin - Official Website</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ff00ff;
+            margin: 20px;
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        .video-container {
+            margin: 20px 0;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff00ff;
+            text-shadow: 2px 2px #00ffff;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .review-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 192, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        .review-box form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .review-box input,
+        .review-box select,
+        .review-box textarea {
+            padding: 10px;
+            border: 2px solid #ff00ff;
+            border-radius: 5px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .review-box button {
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .review-box button:hover {
+            transform: scale(1.05);
+        }
+
+        .review-card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .photo-upload {
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .photo-upload label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #imagePreview {
+            margin-top: 10px;
+        }
+
+        #imagePreview img {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .bounce-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ff00ff;
+            text-shadow: 
+                3px 3px 0 #00ffff,
+                -3px -3px 0 #00ffff,
+                3px -3px 0 #00ffff,
+                -3px 3px 0 #00ffff;
+            animation: bounce 1s infinite;
+            margin: 20px 0;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .credit {
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 18px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .creator {
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 0 5px;
+            text-shadow: none;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-item:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 3px solid #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Welcome to Alex Martin's World 🌟</h1>
+        
+        <!-- Replace the src with an actual image URL -->
+        <img class="profile-pic" src="alex.png" alt="Alex Martin">
+        
+        <div class="bounce-text">LEGEND</div>
+        
+        <h2 class="blink">⭐ Professional Meme Lord ⭐</h2>
+        <div class="video-container">
+            <!-- Replace with your actual YouTube video ID -->
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/qAx_mw8_Hbo?si=O0KsrDH_qiK-xD03" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>     
+      
+
+        <h3>About Me</h3>
+        <p>✨ Professional football player</p>
+        <p>🎭 Master of Disguise</p>
+        <p>🌈 Rainbow Enthusiast</p>
+        <p>✨ Professional Glitter Thrower</p>
+
+        <h3>My Photos 📸</h3>
+        <div class="photo-gallery">
+            <div class="photo-item">
+                <img src="127A5026.JPG" alt="Photo 1">
+            </div>
+            <div class="photo-item">
+                <img src="make him riding a baby cycle - 1054447947.png" alt="Photo 2">
+            </div>
+            <div class="photo-item">
+                <img src="IMG_20240901_140310265.jpg" alt="Photo 3">
+            </div>
+            <div class="photo-item">
+                <img src="make this funny - 1054447787.png" alt="Photo 4">
+            </div>
+        </div>
+
+        <marquee behavior="alternate" direction="right">
+            <h2>💫 Follow me for more amazing content! 💫</h2>
+        </marquee>
+
+       
+
+        <!-- Review submission form -->
+        <div class="review-box">
+            <h3>🌟 Leave a Review! 🌟</h3>
+            <form id="reviewForm" onsubmit="submitReview(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <div class="photo-upload">
+                    <label for="photo">📸 Add a photo:</label>
+                    <input type="file" id="photo" accept="image/*">
+                    <div id="imagePreview"></div>
+                </div>
+                <select id="rating" required>
+                    <option value="">Select Rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+                <textarea id="reviewText" placeholder="Write your review here..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="reviewsContainer"></div>
+        </div>
+
+        <div class="credit">
+            <p>Made with 💖 by <span class="creator">squdox_46_</span></p>
+        </div>
+    </div>
+
+    <script>
+        // Remove or comment out the annoying popup
+        // setInterval(() => {
+        //     alert("Don't forget to smash that like button!");
+        // }, 30000);
+
+        function submitReview(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const rating = document.getElementById('rating').value;
+            const reviewText = document.getElementById('reviewText').value;
+            const photoInput = document.getElementById('photo');
+            
+            const reviewCard = document.createElement('div');
+            reviewCard.className = 'review-card';
+            
+            let reviewContent = `
+                <strong>${name}</strong>
+                <div>${'⭐'.repeat(rating)}</div>
+            `;
+
+            // Add photo if one was uploaded
+            if (photoInput.files[0]) {
+                const photoUrl = URL.createObjectURL(photoInput.files[0]);
+                reviewContent += `<img src="${photoUrl}" style="max-width: 200px; margin: 10px 0;">`;
+            }
+
+            reviewContent += `<p>${reviewText}</p>`;
+            reviewCard.innerHTML = reviewContent;
+            
+            document.getElementById('reviewsContainer').prepend(reviewCard);
+            document.getElementById('reviewForm').reset();
+            document.getElementById('imagePreview').innerHTML = '';
+        }
+
+        // Add preview functionality
+        document.getElementById('photo').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const preview = document.getElementById('imagePreview');
+                preview.innerHTML = ''; // Clear previous preview
+                
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(file);
+                img.style.display = 'block';
+                preview.appendChild(img);
+            }
+        });
+    </script>
+</body>
+</html>
